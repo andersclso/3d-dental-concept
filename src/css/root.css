@@ -4,12 +4,12 @@
 /* Mobile */
 @media only screen and (min-width: 0em) {
   :root {
-    --primary: #2E8BC0;
+    --primary: #72A0C1;
     --primaryShade: #ffd675;
     --primaryDark: #805d0d;
     --bodyTextColor: #4E4B66;
     --bodyTextColorWhite: #FAFBFC;
-    --headerColor: #1a1a1a;
+    --headerColor: #4D4B66;
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
     /* 31px - 49px */
@@ -106,9 +106,10 @@
     position: relative;
     z-index: 1;
     background-color: var(--primary);
-    color: #000;
+    color: white;
     transition: color .3s;
     transition-delay: .1s;
+    border-radius: 30px;
   }
   .button-solid:hover {
     color: #fff;
@@ -125,9 +126,10 @@
     top: 0;
     left: 0;
     z-index: -1;
-    background-color: #000;
+    background-color: #2B66AE;
     width: 0;
     transition: width .3s;
+    border-radius: 30px;
   }
   .skip {
     position: absolute;
@@ -169,10 +171,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #fff;
     width: 100%;
     height: 100%;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
   #navigation .container {
     padding: 0.8125rem 0;
